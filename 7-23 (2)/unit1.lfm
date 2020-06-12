@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 321
+  Height = 561
+  Top = 180
+  Width = 572
+  Caption = 'Задача 7-23'
+  ClientHeight = 527
+  ClientWidth = 572
+  DesignTimePPI = 168
+  Menu = MMenu
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 220
+    Height = 43
+    Top = 272
+    Width = 132
+    Caption = 'Старт'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 241
+    Height = 38
+    Top = 48
+    Width = 211
+    ParentFont = False
+    TabOrder = 1
+    Text = '10'
+  end
+  object Edit2: TEdit
+    Left = 241
+    Height = 38
+    Top = 120
+    Width = 211
+    ParentFont = False
+    TabOrder = 2
+    Text = '12'
+  end
+  object Edit3: TEdit
+    Left = 241
+    Height = 38
+    Top = 192
+    Width = 213
+    ParentFont = False
+    TabOrder = 3
+    Text = '15'
+  end
+  object Label1: TLabel
+    Left = 118
+    Height = 30
+    Top = 50
+    Width = 113
+    Caption = 'Сторона AB'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 121
+    Height = 30
+    Top = 120
+    Width = 112
+    Caption = 'Сторона BC'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 118
+    Height = 30
+    Top = 192
+    Width = 114
+    Caption = 'Сторона AC'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 158
+    Top = 352
+    Width = 544
+    TabOrder = 4
+  end
+  object MMenu: TMainMenu
+    object MIo: TMenuItem
+      Caption = 'Открыть'
+      OnClick = MIoClick
+    end
+    object MIs: TMenuItem
+      Caption = 'Сохранить'
+      OnClick = MIsClick
+    end
+    object MIso: TMenuItem
+      Caption = 'Сохр. отчёт'
+      OnClick = MIsoClick
+    end
+    object MIi: TMenuItem
+      Caption = 'Справка'
+      OnClick = MIiClick
+    end
+    object MIc: TMenuItem
+      Caption = 'Выйти'
+      OnClick = MIcClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    top = 80
+  end
+  object SaveDialog1: TSaveDialog
+    top = 160
+  end
+end
